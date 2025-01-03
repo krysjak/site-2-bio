@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="stylesheet" type="text/css" href="styles.css"> 
+<link rel="stylesheet" type="text/css" href="snow.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="icon" type="image/x-icon" href="./assets/favico/default.ico">
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="custom-cursor">
+  <!-- Terminal Window -->
+  <div id="terminal" class="custom-cursor">
+    <div id="terminal-header">
+      <div id="terminal-buttons">
+        <!-- Terminal Control Buttons -->
+        <div class="terminal-button" id="close-button"></div> <!-- Close button -->
+        <div class="terminal-button" id="minimize-button"></div> <!-- Minimize button -->
+        <div class="terminal-button" id="maximize-button"></div> <!-- Maximize button -->
+      </div>
+    </div>
+    <div id="terminal-content">
+      <p id="terminal-text"></p> <!-- Terminal text content -->
+    </div>
+  </div>
+
+  <div id="volume-control">
+    <i class="fa fa-volume-high" id="volume-icon"></i> <!-- Nowa ikona Font Awesome -->
+    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.1">
+  </div>
+  
+  
+  <!-- Background Elements -->
+  <div id="video-background">
+    <video autoplay muted loop id="myVideo"> <!-- Video background -->
+      <source src="./assets/back/richu.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div id="audio-background">
+      <audio autoplay loop id="myAudio"> <!-- Audio background -->
+        <source src="./assets/music/default.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <div id="snow-container"></div>
+    </div>
+    <div id="blurred-box">
+      <img src="./assets/pfp/default.jpg" alt="Profile Picture"> <!-- Profile picture -->
+      <p id="username" style="color: white; font-weight: bold; font-size: large;">laxiorr</p>    
+      <!-- User Description -->
+      <div class="user-description">
+        <p id="user-description" style="color: white;">lua/js/python dev since 2021<br>
+          <span style="display: block; margin-top: 5px;">C#/C++ dev since 2023</span>
+      </p> 
+    </div>     
+    
+      <div class="typing-effect">
+        <span id="animated-text"></span>
+      </div>
+      <!-- Links -->
+   <!--   <div class="links">
+        <a href="https://www.youtube.com/@laxiorr" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a> 
+   <a href="https://discord.gg/arial" target="_blank">
+          <i class="fa-brands fa-discord"></i> 
+        </a> 
+        <a href="https://www.paypal.me/laxiorrxyz" target="_blank">
+          <i class="fa-brands fa-paypal"></i> -->
+        </a> 
+      </div>
+      </div>  
+    </div>
+  </div>
+
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/title.js"></script>
+</body>
+</html>

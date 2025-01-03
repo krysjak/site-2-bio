@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #001f3f, #0074D9);
+    height: 100vh;
+}
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    background: white;
+    border-radius: 50%; /* Dzięki temu kształt to kółko */
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
