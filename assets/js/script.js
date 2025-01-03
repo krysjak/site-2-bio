@@ -249,7 +249,7 @@ window.addEventListener('mouseleave', resetTilt);
   
   document.addEventListener('DOMContentLoaded', function () {
     const typingElement = document.getElementById('animated-text');
-    const typingTexts = ["soon bio website like guns.lol/ez-bio by me"];
+    const typingTexts = ["I love you"];
     let typingIndex = 0; 
     let charIndex = 0; 
     let isDeleting = false;
